@@ -93,7 +93,8 @@ function addSidebar(markerDatas) {
     sidebar_html += `<b>${index + 1}</b> <a href="javascript:openWindow(${index})">${name}<\/a><br />`;
   }
   document.getElementById("sidebar").innerHTML =
-    `<a target="_blank" href="${SHEET_URL}">元データ(Google スプレッドシート)</a><br>` + sidebar_html;
+    `<a target="_blank" href="${SHEET_URL}">元データ(Google スプレッドシート)</a><br /><a target="_blank" href="https://github.com/champierre/sheet2gmap">ソースコード(GitHub)</a><br /><br />` +
+    sidebar_html;
 }
 
 function addClickEvent(map, marker, markerData) {
